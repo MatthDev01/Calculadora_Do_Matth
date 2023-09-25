@@ -1,0 +1,47 @@
+programa { //calculadora_do_MatthV2
+  inclua biblioteca Matematica --> m
+
+  funcao inicio() {
+    inteiro num1, num2, operacao
+
+    escreva ("Bem-vindo à Calculadora!\n")
+   escreva ("\nDigite o primeiro número: ")
+   leia (num1)
+   limpa()
+   
+   escreva("Digite o segundo número: ")
+   leia (num2)
+   limpa()
+   
+   escreva("Escolha uma operação: \n")
+   escreva("1 ► Soma: \n")
+   escreva("2 ► Subtração: \n")
+   escreva("3 ► Mutiplicação: \n")
+   escreva("4 ► Divisão: \n")
+   leia(operacao)
+   limpa()
+
+   escolha(operacao){
+    caso 1:
+      escreva("O resultado é ", num1 + num2,)
+    pare
+
+    caso 2:
+      escreva("O resultado é ", num1 - num2,)
+    pare
+
+    caso 3:
+      escreva("O resultado é ", num1 * num2,)
+    pare
+
+    caso 4:
+      real resultado = num1 / num2
+      resultado = m.arredondar(resultado, 2)
+      escreva("O resultado é ", resultado)
+    pare
+
+    caso contrario
+      escreva("Opção inválida!!!")
+   }
+  }
+}
